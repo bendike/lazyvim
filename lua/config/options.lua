@@ -3,14 +3,14 @@
 -- Add any additional options here
 vim.diagnostic.config({
   float = {
-    source = "always",
+    source = true,
   },
 })
 
 -- LSP Server to use for Python.
 -- Set to "basedpyright" to use basedpyright instead of pyright.
 vim.g.lazyvim_python_lsp = "pyright"
-vim.g.lazyvim_python_ruff = "ruff"
+vim.g.lazyvim_python_ruff = "ruff_lsp"
 
 vim.g.python3_prog_host = "/Users/bendike/.asdf/shims/python3"
 
